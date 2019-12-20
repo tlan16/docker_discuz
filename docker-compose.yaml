@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.7'
 services:
   app:
     build: .
@@ -6,8 +6,16 @@ services:
       - 8080:80
     depends_on:
       - db
+    volumes:
+      - app-data:/var/www/html
   db:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ultrax
+      MYSQL_DATABASE: ultraxi
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  app-data:
+  db-data:
