@@ -7,6 +7,7 @@ docker-compose up
 ```
 
 [localhost:8080](localhost:8080)
+[127.0.0.1:8080](http://127.0.0.1:8080)
 
 ## TODO
 1. use official git repo to build
